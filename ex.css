@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: navy;
+  padding: 30px;
+}
+
+.main-header_button ul {
+  display: flex;
+}
+
+.main-header_button li {
+  list-style: none;
+  padding: 8px 12px;
+}
+
+@media screen and (max-width: 800px) {
+  .main-header {
+    flex-direction: column;
+  }
+}
