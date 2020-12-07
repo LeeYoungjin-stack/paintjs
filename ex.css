@@ -1,27 +1,138 @@
 body {
   margin: 0;
+  height: 1000vh;
 }
 
-.main-header {
+.navbar {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  position: fixed;
   align-items: center;
-  color: white;
-  background-color: navy;
-  padding: 30px;
+  justify-content: space-between;
+  background-color: black;
+  padding: 12px 13px;
 }
 
-.main-header_button ul {
+.fa-youtube {
+  color: red;
+}
+
+#navbar-youtube,
+#navbar-righticons {
+  color: white;
+}
+
+#navbar-righticons {
+  margin-right: 30px;
+}
+
+.main-video {
   display: flex;
 }
 
-.main-header_button li {
-  list-style: none;
-  padding: 8px 12px;
+.videoinfo {
+  padding: 15px;
+  width: 45%;
+}
+#videoinfo-hash {
+  color: cornflowerblue;
 }
 
-@media screen and (max-width: 800px) {
-  .main-header {
-    flex-direction: column;
+#videoinfo-info {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#videoinfo-info h4,
+#videoinfo-hash h5,
+#videinfo-viewvalue h6 {
+  margin: 0;
+}
+
+#videoinfo-icon,
+#videoinfo-icon__info {
+  display: flex;
+  padding: 0px 20px;
+  justify-content: space-between;
+}
+
+#videinfo-viewvalue h6 {
+  margin-bottom: 15px;
+}
+
+#videoinfo-icon i,
+#videoinfo-icon__info h5 {
+  width: 15px;
+}
+
+.videoinfo-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 45%;
+}
+
+#videoinfo-profile {
+  display: flex;
+  align-items: center;
+}
+
+#videoinfo-profile h4 {
+  justify-content: flex-end;
+}
+
+#videoinfo-profile__name h3,
+#videoinfo-profile__name h5 {
+  margin: 0;
+}
+
+.body-entire {
+  display: flex;
+}
+
+.list-image1,
+.list-image2,
+.list-image3 {
+  width: 45%;
+  height: 120px;
+}
+
+.lecture-list {
+  width: 55%;
+  padding: 0px 30px;
+}
+
+#lecture-list_3of1,
+#lecture-list_3of2,
+#lecture-list_3of3 {
+  display: flex;
+  margin: 20px 0px;
+}
+
+#lecture-list_name1,
+#lecture-list_name2,
+#lecture-list_name3 {
+  display: flex;
+  height: 120px;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+
+#lecture-list_name1 h5,
+#lecture-list_name2 h5,
+#lecture-list_name3 h5 {
+  margin: 0;
+}
+
+#lecture-list_name1 h6,
+#lecture-list_name2 h6,
+#lecture-list_name3 h6 {
+  margin: 0;
+}
+
+@media screen and (min-width: 300px) {
+  .body-entire {
+    display: block;
   }
 }
